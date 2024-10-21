@@ -1,0 +1,47 @@
+.content {
+  @apply flex flex-col gap-5;
+}
+
+.content .uid {
+  @apply flex-wrap text-lg font-bold;
+}
+
+.content img {
+  @apply w-20 rounded-lg;
+}
+
+.data {
+  @apply font-normal;
+}
+
+.display_name {
+  @apply text-2xl font-light;
+}
+
+.body {
+  @apply flex gap-5;
+}
+
+.pokemons {
+  @apply grid grid-cols-3 gap-y-3 rounded-lg bg-blue-100 p-3;
+}
+
+:global(.dark) .pokemons {
+  @apply bg-slate-600;
+}
+
+.pokemon {
+  @apply flex justify-center;
+}
+
+.pokemon div {
+  @apply h-16 w-16 items-center overflow-hidden rounded-full border-2 border-blue-300;
+}
+
+:global(.dark) .pokemons {
+  @apply border-blue-600;
+}
+
+.pokemon div img {
+  transform: scale(1.5);
+}

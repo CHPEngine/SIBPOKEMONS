@@ -1,0 +1,19 @@
+.container {
+  @apply flex flex-col gap-3 py-5;
+}
+
+.evolutions_container {
+  @apply mt-2 flex flex-col justify-between gap-4;
+}
+
+@screen md {
+  .evolutions_container {
+    @apply grid grid-cols-3;
+  }
+}
+
+@screen lg {
+  .evolutions_container {
+    @apply grid grid-cols-3;
+  }
+}

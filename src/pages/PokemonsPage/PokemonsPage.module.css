@@ -1,0 +1,16 @@
+.pokemons_container {
+  @apply grid grid-cols-1 gap-5;
+  @apply md:grid-cols-3 md:gap-10;
+}
+
+.pokemon {
+  @apply flex items-center justify-between gap-1;
+}
+
+.pokemon_number {
+  @apply text-base font-light;
+}
+
+.pokemon_name {
+  @apply text-2xl font-bold capitalize;
+}

@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  @apply font-normal;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @apply bg-gray-100 dark:bg-slate-900;
+  @apply text-black dark:text-slate-300;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+:root {
+  --image-cover: url('../img/cover.jpg');
+  --image-logo: url('../img/pokemon_logo.png');
+}
+
+.page {
+  @apply container p-4 pb-4;
+}
+
+.card {
+  @apply rounded-lg bg-white p-5 shadow-md;
+}
+
+.card {
+  @apply dark:bg-slate-700 dark:shadow-none;
+}
